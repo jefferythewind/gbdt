@@ -1,11 +1,5 @@
 import numpy as np
 cimport numpy as np
-from sklearn.datasets import fetch_california_housing
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error, r2_score
-from lightgbm import LGBMRegressor
-import time
-from joblib import Parallel, delayed
 from cython.parallel import prange
 
 cdef class TreeNode:
